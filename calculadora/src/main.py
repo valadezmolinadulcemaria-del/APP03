@@ -16,10 +16,24 @@ def main(page: ft.Page):
    )
    
    #entradas
-   num1=ft.ft.TextField
-   
-   
-   
+    num1 = ft.TextField(
+        label="Número 1",
+        width=200,
+        text_style=ft.TextStyle(color=ft.Colors. YELLOW_100)
+    )
+    num2 = ft. TextField(
+        label="Número 2",
+        width=200,
+    text_style=ft.TextStyle(color=ft.Colors.YELLOW_100)
+    )
+    
+    resultado = ft.Text(
+        value="Resultado: ",
+        size=20,
+        color=ft.Colors.YELLOW_100,
+        text_align="center"
+    )
+
    
     page.add()
 
