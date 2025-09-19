@@ -118,9 +118,9 @@ def main(page: ft.Page):
                 ),
                 ft.Row(
                     [
-                        ft.ElevatedButton(" Dividir", on_click=division, width = 120 ) ,
-                        ft.ElevatedButton("M Porcentaje", on_click=porcentaje, width=120),
-                        ft.ElevatedButton("✓ Raíz Cuadrada", on_click=raiz_cuadrada, width=120),
+                        ft.ElevatedButton(" ÷ Dividir", on_click=division, width = 120 ) ,
+                        ft.ElevatedButton("% Porcentaje", on_click=porcentaje, width=120),
+                        ft.ElevatedButton("√ Raíz Cuadrada", on_click=raiz_cuadrada, width=120),
                     ],
                     spacing=10,
                     alignment="center"
