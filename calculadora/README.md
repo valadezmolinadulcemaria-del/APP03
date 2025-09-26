@@ -1,79 +1,122 @@
-# Calculadora app
+# Calculadora Básica con Flet
 
-## Run the app
+Una calculadora simple desarrollada en Python usando el framework Flet para interfaces gráficas modernas.
 
-### uv
+---
 
-Run as a desktop app:
+## 📑 Manual Técnico
 
-```
-uv run flet run
-```
+### Requisitos y dependencias
 
-Run as a web app:
+- **Python 3.8+**
+- **Flet** (interfaz de usuario)
+- **Math** (módulo estándar de Python)
 
-```
-uv run flet run --web
-```
+#### Instalación
 
-### Poetry
+1. Clona este repositorio:
 
-Install dependencies from `pyproject.toml`:
+   ```bash
+   git clone https://github.com/valadezmolinadulcemaria-del/APP03.git
+   ```
 
-```
-poetry install
-```
+2. Ingresa al directorio del proyecto:
 
-Run as a desktop app:
+   ```bash
+   cd APP03/calculadora
+   ```
 
-```
-poetry run flet run
-```
+3. Instala las dependencias:
 
-Run as a web app:
+   ```bash
+   pip install flet
+   ```
 
-```
-poetry run flet run --web
-```
-
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
-
-## Build the app
-
-### Android
+#### Estructura de Archivos
 
 ```
-flet build apk -v
+calculadora/
+└── src/
+    └── main.py    # Código fuente principal de la calculadora
 ```
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
+#### Ejecución
 
-### iOS
+Desde la carpeta `calculadora/src/`, ejecuta:
 
-```
-flet build ipa -v
-```
-
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
-
-### macOS
-
-```
-flet build macos -v
+```bash
+python main.py
 ```
 
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
+Esto abrirá la aplicación en tu navegador web por defecto.
 
-### Linux
+---
 
+## 👩‍💻 Manual de Usuario
+
+### Descripción general
+
+La calculadora permite realizar las siguientes operaciones:
+
+- Suma
+- Resta
+- Multiplicación
+- División
+- Porcentaje
+- Raíz cuadrada
+
+### Uso de la aplicación
+
+1. **Ingresa dos números** en los campos "Número 1" y "Número 2".
+2. **Selecciona la operación** que deseas realizar haciendo clic en el botón correspondiente:
+   - `+ Sumar`
+   - `- Restar`
+   - `x Multiplicar`
+   - `÷ Dividir`
+   - `% Porcentaje` (Calcula el porcentaje del primer número respecto al segundo)
+   - `√ Raíz Cuadrada` (Muestra la raíz cuadrada de ambos números)
+3. **Visualiza el resultado** en la parte central de la pantalla.
+4. Si se comete un error (por ejemplo, texto no numérico), aparecerá el mensaje "Error".
+
+#### Nota sobre Porcentaje
+
+- El campo de arriba es el número base y el de abajo es el porcentaje (%) que quieres calcular.
+
+---
+
+## 🧩 Diagramas de flujo
+
+### Suma
+
+```mermaid
+flowchart TD
+    A[Inicia] --> B[Lee Número 1 y Número 2]
+    B --> C[Suma ambos números]
+    C --> D[Muestra el resultado]
+    D --> E[Fin]
 ```
-flet build linux -v
+
+### Raíz Cuadrada
+
+```mermaid
+flowchart TD
+    A[Inicia] --> B[Lee Número 1 y Número 2]
+    B --> C[Calcula raíz cuadrada de ambos]
+    C --> D[Muestra ambos resultados]
+    D --> E[Fin]
 ```
 
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
+---
 
-### Windows
+## 📷 Vista previa
 
+![Ejemplo de la interfaz de la calculadora](ruta/a/tu/captura.png)
+
+---
+
+## Autor
+
+- valadez molina dulce maria
 ```
 flet build windows -v
 ```
