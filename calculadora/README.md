@@ -112,7 +112,11 @@ flowchart TD
 
 ## 📷 Vista previa
 
-![Ejemplo de la interfaz de la calculadora](ruta/a/tu/captura.png)
+![Ejemplo de la interfaz de la calculadora](/workspaces/APP03/calculadora/src/assets/2025-09-26 (2).png)
+
+
+## 💫 Resultado de codigp
+![resultado de codigo] (/workspaces/APP03/calculadora/src/assets/2025-09-26.png)
 
 ---
 
