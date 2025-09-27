@@ -96,6 +96,8 @@ flowchart TD
     D --> E[Fin]
 ```
 
+- diagrama de la suma,resta, multiplicación , división tiene el mismos diagrama así q solo puse el la suma para ejemplo 
+
 ### Raíz Cuadrada
 
 ```mermaid
